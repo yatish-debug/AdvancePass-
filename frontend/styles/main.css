@@ -1,0 +1,46 @@
+/* Glassmorphism Theme for AdvancePass */
+
+.stApp {
+    background-color: #0e1117;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+div[data-testid="stSidebar"] {
+    background: rgba(30, 30, 40, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stCard {
+    background: rgba(30, 30, 40, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00d2ff;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Custom progress bar colors */
+.stProgress > div > div > div > div {
+    background-color: #00d2ff;
+}
+
+.progress-very-weak > div > div > div > div { background-color: #ff4b4b !important; }
+.progress-weak > div > div > div > div { background-color: #ffa500 !important; }
+.progress-medium > div > div > div > div { background-color: #ffd700 !important; }
+.progress-strong > div > div > div > div { background-color: #00cc66 !important; }
