@@ -6,3 +6,11 @@ pydantic
 fpdf2
 google-generativeai
 python-dotenv
+plotly
+scikit-learn
+xgboost
+sqlalchemy
+python-docx
+passlib
+cryptography
+zxcvbn

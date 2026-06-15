@@ -1,0 +1,78 @@
+/* Glassmorphism & Dark Mode Theme */
+:root {
+    --bg-primary: #0f172a; /* Slate 900 */
+    --bg-secondary: rgba(30, 41, 59, 0.7); /* Slate 800 with opacity */
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent: #3b82f6; /* Blue 500 */
+    --accent-hover: #2563eb;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.stApp {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+/* Glassmorphic Metric Cards */
+div[data-testid="stMetric"] {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: var(--glass-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Customizing Streamlit Headers */
+h1, h2, h3 {
+    color: var(--text-main) !important;
+    font-weight: 600;
+}
+
+/* Sidebar Styling */
+section[data-testid="stSidebar"] {
+    background-color: rgba(15, 23, 42, 0.95);
+    border-right: 1px solid var(--glass-border);
+}
+
+/* Primary Button Styling */
+button[kind="primary"] {
+    background-color: var(--accent) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    transition: all 0.2s ease;
+}
+
+button[kind="primary"]:hover {
+    background-color: var(--accent-hover) !important;
+    transform: translateY(-1px);
+}
+
+/* DataFrames / Tables */
+div[data-testid="stDataFrame"] {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+}
+
+/* Info Boxes */
+div.stAlert {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(5px);
+    color: var(--text-main);
+}
